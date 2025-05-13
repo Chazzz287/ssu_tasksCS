@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr21_i_15\\pr21_i_15\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|solutionrelative:pr21_i_15\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr21_i_15\\pr21_i_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|solutionrelative:pr21_i_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr21_i_15\\pr21_i_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{61A920F5-7DA7-41D6-8006-404DD0CD91B8}|Pr21_I_15\\Pr21_I_15.csproj|solutionrelative:pr21_i_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BinaryTree.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\BinaryTree.cs",
+              "RelativeDocumentMoniker": "Pr21_I_15\\BinaryTree.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\BinaryTree.cs",
+              "RelativeToolTip": "Pr21_I_15\\BinaryTree.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwFYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:20:08.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\input.txt",
+              "RelativeDocumentMoniker": "Pr21_I_15\\input.txt",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\input.txt",
+              "RelativeToolTip": "Pr21_I_15\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-13T08:10:48.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\Program.cs",
+              "RelativeDocumentMoniker": "Pr21_I_15\\Program.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_I_15\\Pr21_I_15\\Program.cs",
+              "RelativeToolTip": "Pr21_I_15\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:03:55.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersonsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MinAge>20</MinAge>
+  <MaxAge>30</MaxAge>
+  <Persons>
+    <Person xsi:type="Applicant">
+      <LastName>Иванов</LastName>
+      <BirthDate>2003-06-15T00:00:00</BirthDate>
+      <Faculty>Физика</Faculty>
+    </Person>
+    <Person xsi:type="Student">
+      <LastName>Иванов</LastName>
+      <BirthDate>2003-06-15T00:00:00</BirthDate>
+      <Faculty>Физика</Faculty>
+      <Course>2</Course>
+    </Person>
+    <Person xsi:type="Student">
+      <LastName>Петров</LastName>
+      <BirthDate>2003-04-10T00:00:00</BirthDate>
+      <Faculty>Математика</Faculty>
+      <Course>2</Course>
+    </Person>
+    <Person xsi:type="Student">
+      <LastName>Смирнов</LastName>
+      <BirthDate>2001-09-25T00:00:00</BirthDate>
+      <Faculty>Биология</Faculty>
+      <Course>4</Course>
+    </Person>
+    <Person xsi:type="Student">
+      <LastName>Фёдоров</LastName>
+      <BirthDate>2002-07-18T00:00:00</BirthDate>
+      <Faculty>Физика</Faculty>
+      <Course>3</Course>
+    </Person>
+  </Persons>
+</PersonsData>

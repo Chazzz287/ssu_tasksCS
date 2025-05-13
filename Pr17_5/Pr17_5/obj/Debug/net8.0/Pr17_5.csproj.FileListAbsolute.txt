@@ -1,0 +1,15 @@
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\bin\Debug\net8.0\Pr17_5.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\bin\Debug\net8.0\Pr17_5.deps.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\bin\Debug\net8.0\Pr17_5.runtimeconfig.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\bin\Debug\net8.0\Pr17_5.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\bin\Debug\net8.0\Pr17_5.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.AssemblyInfoInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.AssemblyInfo.cs
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.sourcelink.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\refint\Pr17_5.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\Pr17_5.genruntimeconfig.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr17_5\Pr17_5\obj\Debug\net8.0\ref\Pr17_5.dll

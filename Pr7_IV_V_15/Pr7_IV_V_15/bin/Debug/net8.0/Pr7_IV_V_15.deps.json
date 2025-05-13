@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Pr7_IV_V_15/1.0.0": {
+        "runtime": {
+          "Pr7_IV_V_15.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pr7_IV_V_15/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

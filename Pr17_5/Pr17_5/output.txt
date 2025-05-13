@@ -1,0 +1,13 @@
+Array1: 1, 2, 3, 4, 5
+Array2: 3, 6, 9, 12, 15
+Array1 equals Array2: False
+Array1 hash code: 487681682
+Array2 hash code: 489653912
+Is Array1 unordered: False
+Array1 * 2: 2, 4, 6, 8, 10
+3 * Array1: 3, 6, 9, 12, 15
+array1: 1, 2, 3, 4, 5
+array3: 2, 3, 4, 5, 6
+List of arrays:
+1, 2, 3, 4, 5
+100, 6, 9, 12, 15

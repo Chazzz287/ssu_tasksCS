@@ -1,0 +1,14 @@
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.exe.config
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.exe
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.pdb
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.csproj.AssemblyReference.cache
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.exe
+C:\Users\Mari\source\repos\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.exe.config
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\bin\Debug\Pr14_II_5.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.csproj.AssemblyReference.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr14_II_5\Pr14_II_5\obj\Debug\Pr14_II_5.pdb

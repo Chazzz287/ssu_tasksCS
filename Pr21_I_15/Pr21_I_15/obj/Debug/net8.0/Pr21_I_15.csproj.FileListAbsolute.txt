@@ -1,0 +1,15 @@
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.AssemblyInfoInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.AssemblyInfo.cs
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.sourcelink.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\bin\Debug\net8.0\Pr21_I_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\bin\Debug\net8.0\Pr21_I_15.deps.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\bin\Debug\net8.0\Pr21_I_15.runtimeconfig.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\bin\Debug\net8.0\Pr21_I_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\bin\Debug\net8.0\Pr21_I_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\refint\Pr21_I_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\Pr21_I_15.genruntimeconfig.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr21_I_15\Pr21_I_15\obj\Debug\net8.0\ref\Pr21_I_15.dll

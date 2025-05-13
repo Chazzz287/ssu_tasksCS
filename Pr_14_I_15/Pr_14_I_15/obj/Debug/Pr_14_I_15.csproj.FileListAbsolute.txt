@@ -1,0 +1,7 @@
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\bin\Debug\Pr_14_I_15.exe.config
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\bin\Debug\Pr_14_I_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\bin\Debug\Pr_14_I_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\obj\Debug\Pr_14_I_15.csproj.AssemblyReference.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\obj\Debug\Pr_14_I_15.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\obj\Debug\Pr_14_I_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr_14_I_15\Pr_14_I_15\obj\Debug\Pr_14_I_15.pdb

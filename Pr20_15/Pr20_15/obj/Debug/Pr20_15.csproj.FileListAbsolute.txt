@@ -1,0 +1,7 @@
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\bin\Debug\Pr20_15.exe.config
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\bin\Debug\Pr20_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\bin\Debug\Pr20_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\obj\Debug\Pr20_15.csproj.AssemblyReference.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\obj\Debug\Pr20_15.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\obj\Debug\Pr20_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr20_15\Pr20_15\obj\Debug\Pr20_15.pdb

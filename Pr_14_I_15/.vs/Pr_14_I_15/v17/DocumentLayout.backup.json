@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB2C311-5353-4094-8D40-B7521EF04B04}|Pr_14_I_15\\Pr_14_I_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr_14_i_15\\pr_14_i_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4AB2C311-5353-4094-8D40-B7521EF04B04}|Pr_14_I_15\\Pr_14_I_15.csproj|solutionrelative:pr_14_i_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB2C311-5353-4094-8D40-B7521EF04B04}|Pr_14_I_15\\Pr_14_I_15.csproj|C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\pr_14_i_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB2C311-5353-4094-8D40-B7521EF04B04}|Pr_14_I_15\\Pr_14_I_15.csproj|solutionrelative:pr_14_i_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\Pr_14_I_15\\input.txt",
+              "RelativeDocumentMoniker": "Pr_14_I_15\\input.txt",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\Pr_14_I_15\\input.txt",
+              "RelativeToolTip": "Pr_14_I_15\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-01T14:18:39.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\Pr_14_I_15\\Program.cs",
+              "RelativeDocumentMoniker": "Pr_14_I_15\\Program.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr_14_I_15\\Pr_14_I_15\\Program.cs",
+              "RelativeToolTip": "Pr_14_I_15\\Program.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T14:16:32.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

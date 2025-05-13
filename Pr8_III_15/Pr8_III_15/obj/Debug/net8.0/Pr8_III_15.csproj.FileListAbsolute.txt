@@ -1,0 +1,15 @@
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\bin\Debug\net8.0\Pr8_III_15.exe
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\bin\Debug\net8.0\Pr8_III_15.deps.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\bin\Debug\net8.0\Pr8_III_15.runtimeconfig.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\bin\Debug\net8.0\Pr8_III_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\bin\Debug\net8.0\Pr8_III_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.AssemblyInfoInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.AssemblyInfo.cs
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.csproj.CoreCompileInputs.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.sourcelink.json
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\refint\Pr8_III_15.dll
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.pdb
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\Pr8_III_15.genruntimeconfig.cache
+C:\Users\Mari\source\repos\ssu_tasksCS\Pr8_III_15\Pr8_III_15\obj\Debug\net8.0\ref\Pr8_III_15.dll
