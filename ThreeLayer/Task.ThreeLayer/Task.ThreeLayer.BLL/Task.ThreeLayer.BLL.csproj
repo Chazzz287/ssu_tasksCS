@@ -44,11 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientLogic.cs" />
-    <Compile Include="IClientLogic.cs" />
+    <Compile Include="IPersonLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Task.ThreeLayer.Entities\Task.ThreeLayer.Entities.csproj">
+      <Project>{93af1da5-f147-462c-9fba-a7ba6e57c950}</Project>
+      <Name>Task.ThreeLayer.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
