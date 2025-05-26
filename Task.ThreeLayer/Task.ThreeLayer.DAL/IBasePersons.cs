@@ -8,13 +8,13 @@ using Task.ThreeLayer.Entities;
 
 namespace Task.ThreeLayer.DAL
 {
-    internal interface IBasePersons
+    public interface IBasePersons
     {
 
         void AddPerson(Person person);
         void DeletePerson(string name);
         void DeletePerson(int index);
-        IEnumerable GetAllPersons();
+        IEnumerable<Person> GetAllPersons();
         Person GetPerson(int index);
     }
 }

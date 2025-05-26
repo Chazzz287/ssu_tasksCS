@@ -5,7 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task.ThreeLayer.Entities;
+/*
+ addPerson
+    deletePerson
+    deletePerson by index
+    getAllPersons
+    getPerson
 
+ */
 namespace Task.ThreeLayer.BLL
 {
     internal interface IPersonLogic

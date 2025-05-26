@@ -34,7 +34,50 @@ namespace Task.ThreeLayer.DAL
             SaveBasePersons();
         }
 
-        void SaveBasePersons()
+        public void AddPerson(Person person)
+        {
+            persons.Add(index, person);
+            index++;
+        }
+
+        public void DeletePerson(string name)
+        {
+            foreach (var item in persons)
+            {
+                if (item.Value.LastName == name)
+                {
+                    persons.Remove(item.Key);
+                    break;
+                }
+            }
+        }
+
+        public void DeletePerson(int index)
+        {
+            if (persons.ContainsKey(index))
+            {
+                persons.Remove(index);
+            }
+        }
+
+        public IEnumerable<Person> GetAllPersons()
+        {
+            return persons.Values;
+        }
+
+        public Person GetPerson(int index)
+        {
+            if (persons.ContainsKey(index))
+            {
+                return persons[index];
+            }
+            else
+            {
+                throw new KeyNotFoundException("Person not found");
+            }
+        }
+
+        public void SaveBasePersons()
         {
             using (FileStream file = new FileStream("data.json", FileMode.OpenOrCreate))
             {

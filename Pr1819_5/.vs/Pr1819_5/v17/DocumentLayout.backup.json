@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,18 +35,6 @@
       "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -67,19 +67,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "result.xml",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\result.xml",
-              "RelativeDocumentMoniker": "Pr1819_5\\result.xml",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\result.xml",
-              "RelativeToolTip": "Pr1819_5\\result.xml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-03-11T09:14:09.849Z"
+              "DocumentIndex": 0,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Teacher.cs",
+              "RelativeDocumentMoniker": "Pr1819_5\\Teacher.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Teacher.cs",
+              "RelativeToolTip": "Pr1819_5\\Teacher.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwCIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:51:22.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Student.cs",
+              "RelativeDocumentMoniker": "Pr1819_5\\Student.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Student.cs",
+              "RelativeToolTip": "Pr1819_5\\Student.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:50:25.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
+              "RelativeDocumentMoniker": "Pr1819_5\\Applicant.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
+              "RelativeToolTip": "Pr1819_5\\Applicant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:49:32.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
+              "RelativeDocumentMoniker": "Pr1819_5\\Person.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
+              "RelativeToolTip": "Pr1819_5\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:47:48.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Program.cs",
+              "RelativeDocumentMoniker": "Pr1819_5\\Program.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Program.cs",
+              "RelativeToolTip": "Pr1819_5\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:23:38.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "data.xml",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\data.xml",
               "RelativeDocumentMoniker": "Pr1819_5\\data.xml",
@@ -91,56 +143,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Teacher.cs",
-              "RelativeDocumentMoniker": "Pr1819_5\\Teacher.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Teacher.cs",
-              "RelativeToolTip": "Pr1819_5\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:51:22.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Student.cs",
-              "RelativeDocumentMoniker": "Pr1819_5\\Student.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Student.cs",
-              "RelativeToolTip": "Pr1819_5\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:50:25.705Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Applicant.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
-              "RelativeDocumentMoniker": "Pr1819_5\\Applicant.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
-              "RelativeToolTip": "Pr1819_5\\Applicant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:49:32.755Z"
+              "Title": "result.xml",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\result.xml",
+              "RelativeDocumentMoniker": "Pr1819_5\\result.xml",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\result.xml",
+              "RelativeToolTip": "Pr1819_5\\result.xml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-03-11T09:14:09.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
-              "RelativeDocumentMoniker": "Pr1819_5\\Person.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
-              "RelativeToolTip": "Pr1819_5\\Person.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:47:48.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "input.txt",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\input.txt",
               "RelativeDocumentMoniker": "Pr1819_5\\input.txt",
@@ -149,19 +164,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-02-10T07:03:14.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Program.cs",
-              "RelativeDocumentMoniker": "Pr1819_5\\Program.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Program.cs",
-              "RelativeToolTip": "Pr1819_5\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T06:23:38.402Z",
-              "EditorCaption": ""
             }
           ]
         }
