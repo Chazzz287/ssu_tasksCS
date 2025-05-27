@@ -11,6 +11,7 @@ namespace Pr22_I_13
         {
             private int[,] array;     // Матрица смежности
             private bool[] visited;   // Массив флагов посещения вершин
+            private int len;          // Длина массива для матрицы смежности
 
             // Индексатор для доступа к матрице смежности
             public int this[int i, int j]
@@ -20,12 +21,33 @@ namespace Pr22_I_13
             }
 
             // Количество вершин (размер матрицы)
-            public int Size => array.GetLength(0);
+            public int Size => len;
 
             public Node(int[,] a)
             {
-                array = a;
-                visited = new bool[a.GetLength(0)];
+                len = a.GetLength(0);
+                array = new int[len*2, len*2];
+                for (int i = 0; i < len; i++)
+                {
+                    for (int j = 0; j < len; j++)
+                    {
+                        array[i,j] = a[i, j];
+                    }
+                }
+                visited = new bool[len];
+            }
+
+            private void Resize()
+            {
+                int[,] newArray = new int[len*2, len*2];
+                for (int i = 0; i < array.GetLength(0); i++)
+                {
+                    for (int j = 0; j < array.GetLength(0); j++)
+                    {
+                        newArray[i, j] = array[i, j];
+                    }
+                }
+                array = newArray;
             }
 
             // Помечаем все вершины как непосещённые
@@ -190,6 +212,21 @@ namespace Pr22_I_13
                     WayFloyd(k, b, p, ref path);
                 }
             }
+
+            public void AddNode(IList<int> connects)
+            {
+                if (array.GetLength(0) == len)
+                {
+                    Resize();
+                }
+                for (int i = 0; i < connects.ToArray().Length; i++)
+                {
+                    array[len, i] = connects[i];
+                    array[i, len] = connects[i];
+                }
+                len++;
+                    
+            }
         }
 
         private Node graph;
@@ -300,30 +337,7 @@ namespace Pr22_I_13
 
         public void AddVertex(IList<int> connections)
         {
-            int oldSize = graph.Size;
-            int newSize = oldSize + 1;
-            int[,] newArray = new int[newSize, newSize];
-
-            // Копируем старую матрицу смежности
-            for (int i = 0; i < oldSize; i++)
-                for (int j = 0; j < oldSize; j++)
-                    newArray[i, j] = graph[i, j];
-
-            // Проверяем размер списка connections
-            if (connections == null || connections.Count != oldSize)
-                throw new ArgumentException("Длина списка connections должна совпадать с количеством вершин графа");
-
-            // Добавляем новые рёбра согласно connections
-            for (int i = 0; i < oldSize; i++)
-            {
-                newArray[i, newSize - 1] = connections[i];
-                newArray[newSize - 1, i] = connections[i];
-            }
-            // Новая вершина не соединена сама с собой
-            newArray[newSize - 1, newSize - 1] = 0;
-
-            // Пересоздаём Node с новой матрицей
-            graph = new Graph.Node(newArray);
+            graph.AddNode(connections);
         }
     }
 }

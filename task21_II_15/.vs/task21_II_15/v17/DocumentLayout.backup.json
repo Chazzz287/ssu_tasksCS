@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\task21_ii_15\\task21_ii_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|solutionrelative:task21_ii_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\task21_ii_15\\task21_ii_15\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|solutionrelative:task21_ii_15\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\task21_ii_15\\task21_ii_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|solutionrelative:task21_ii_15\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\task21_ii_15\\task21_ii_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{00CF59EA-9925-4839-B161-710166E68A12}|task21_II_15\\task21_II_15.csproj|solutionrelative:task21_ii_15\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "input.txt",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\input.txt",
               "RelativeDocumentMoniker": "task21_II_15\\input.txt",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\input.txt",
               "RelativeToolTip": "task21_II_15\\input.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-05-06T08:15:27.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BinaryTree.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\BinaryTree.cs",
               "RelativeDocumentMoniker": "task21_II_15\\BinaryTree.cs",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\BinaryTree.cs",
               "RelativeToolTip": "task21_II_15\\BinaryTree.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwAgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T21:19:36.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\Program.cs",
               "RelativeDocumentMoniker": "task21_II_15\\Program.cs",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\task21_II_15\\task21_II_15\\Program.cs",
               "RelativeToolTip": "task21_II_15\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T21:06:24.285Z",
               "EditorCaption": ""
