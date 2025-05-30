@@ -6,205 +6,185 @@ using System.Threading.Tasks;
 
 namespace Pr21_III_14
 {
+    /// <summary>
+    /// AVL-дерево с методами проверки идеального баланса и возможных вставок.
+    /// </summary>
     public class AVLTree
     {
         private class Node
         {
-            public int inf;
-            public int height;
-            public Node left, rigth;
+            // Значение, хранящееся в узле
+            public int Value;
 
+            // Высота поддерева с корнем в этом узле
+            public int Height;
+
+            // Количество узлов в поддереве с корнем в этом узле
+            public int Count;
+
+            // Левые и правые дочерние узлы
+            public Node Left, Right;
+
+            // Конструктор узла, инициализация значением, высотой и количеством
             public Node(int val)
             {
-                inf = val;
-                height = 1;
-                left = rigth = null;
+                Value = val;
+                Height = 1;
+                Count = 1;
             }
 
-            public int Height => this == null ? 0 : height;
-
-            public int BalanceFactor
+            // Обновляет высоту и количество узлов в поддереве
+            public void Update()
             {
-                get
+                int lh = Left?.Height ?? 0;
+                int rh = Right?.Height ?? 0;
+                Height = Math.Max(lh, rh) + 1;
+                Count = 1 + (Left?.Count ?? 0) + (Right?.Count ?? 0);
+            }
+
+            // Баланс-фактор: разница высот правого и левого поддеревьев
+            public int BalanceFactor => (Right?.Height ?? 0) - (Left?.Height ?? 0);
+
+            // Правый поворот вокруг узла p
+            public static Node RotateRight(Node p)
+            {
+                var q = p.Left;
+                p.Left = q.Right;
+                q.Right = p;
+                p.Update();
+                q.Update();
+                return q;
+            }
+
+            // Левый поворот вокруг узла p
+            public static Node RotateLeft(Node p)
+            {
+                var q = p.Right;
+                p.Right = q.Left;
+                q.Left = p;
+                p.Update();
+                q.Update();
+                return q;
+            }
+
+            // Балансировка узла p
+            public static Node Balance(Node p)
+            {
+                p.Update();
+                if (p.BalanceFactor == 2)
                 {
-                    int rh = rigth?.Height ?? 0;
-                    int lh = left?.Height ?? 0;
-                    return rh - lh;
+                    if (p.Right?.BalanceFactor < 0)
+                        p.Right = RotateRight(p.Right);
+                    return RotateLeft(p);
                 }
-            }
-
-            public void NewHeight()
-            {
-                int rh = rigth?.Height ?? 0;
-                int lh = left?.Height ?? 0;
-                height = (rh > lh ? rh : lh) + 1;
-            }
-
-            public static void RotationRigth(ref Node t)
-            {
-                Node x = t.left;
-                t.left = x.rigth;
-                x.rigth = t;
-                t.NewHeight();
-                x.NewHeight();
-                t = x;
-            }
-
-            public static void RotationLeft(ref Node t)
-            {
-                Node x = t.rigth;
-                t.rigth = x.left;
-                x.left = t;
-                t.NewHeight();
-                x.NewHeight();
-                t = x;
-            }
-
-            public static void Rotation(ref Node t)
-            {
-                t.NewHeight();
-                if (t.BalanceFactor == 2)
+                if (p.BalanceFactor == -2)
                 {
-                    if (t.rigth.BalanceFactor < 0)
-                    {
-                        RotationRigth(ref t.rigth);
-                    }
-                    RotationLeft(ref t);
+                    if (p.Left?.BalanceFactor > 0)
+                        p.Left = RotateLeft(p.Left);
+                    return RotateRight(p);
                 }
-                else if (t.BalanceFactor == -2)
-                {
-                    if (t.left.BalanceFactor > 0)
-                    {
-                        RotationLeft(ref t.left);
-                    }
-                    RotationRigth(ref t);
-                }
+                return p;
             }
 
-            public static void Add(ref Node r, int val)
+            // Вставка значения в поддерево с корнем p
+            public static Node Insert(Node p, int val)
             {
-                if (r == null)
-                {
-                    r = new Node(val);
-                    return;
-                }
-                if (val < r.inf)
-                    Add(ref r.left, val);
-                else
-                    Add(ref r.rigth, val);
-
-                Rotation(ref r);
+                if (p == null)
+                    return new Node(val);
+                if (val < p.Value)
+                    p.Left = Insert(p.Left, val);
+                else if (val > p.Value)
+                    p.Right = Insert(p.Right, val);
+                // дубликаты не вставляем
+                return Balance(p);
             }
+
+            // Симметричный (in-order) обход поддерева
+            public static void InOrder(Node p, List<int> list)
+            {
+                if (p == null) return;
+                InOrder(p.Left, list);
+                list.Add(p.Value);
+                InOrder(p.Right, list);
+            }
+
+            // Получить высоту поддерева
+            public static int GetHeight(Node p) => p?.Height ?? 0;
+
+            // Получить количество узлов в поддереве
+            public static int GetCount(Node p) => p?.Count ?? 0;
         }
 
-        Node root;
+        // Корень дерева
+        private Node root;
 
-        public void Add(int val)
+        // Конструктор по умолчанию
+        public AVLTree() { }
+
+        // Конструктор, инициализирующий дерево элементами из коллекции
+        public AVLTree(IEnumerable<int> items)
         {
-            Node.Add(ref root, val);
+            foreach (var v in items)
+                Add(v);
         }
 
-        public int Height => root?.Height ?? 0;
+        // Вставка значения с балансировкой
+        public void Add(int val) => root = Node.Insert(root, val);
 
-        private int CountNodes(Node node)
-        {
-            if (node == null) return 0;
-            return 1 + CountNodes(node.left) + CountNodes(node.rigth);
-        }
+        // Высота дерева
+        public int Height => Node.GetHeight(root);
 
-        private int GetHeight(Node node)
-        {
-            if (node == null) return 0;
-            return 1 + Math.Max(GetHeight(node.left), GetHeight(node.rigth));
-        }
+        // Количество узлов в дереве
+        public int Count => Node.GetCount(root);
 
-        private bool IsPerfectlyBalanced(Node node)
-        {
-            if (node == null)
-                return true;
-
-            int lh = GetHeight(node.left);
-            int rh = GetHeight(node.rigth);
-            if (lh != rh)
-                return false;
-
-            return IsPerfectlyBalanced(node.left) && IsPerfectlyBalanced(node.rigth);
-        }
-
+        // Проверяет, идеально ли сбалансировано дерево
         public bool IsPerfectlyBalanced()
         {
-            int count = CountNodes(root);
-            int h = GetHeight(root);
-            return count == (1 << h) - 1 && IsPerfectlyBalanced(root);
-        }
-
-        public bool CanInsertToBalance(int val)
-        {
-            AVLTree copy = Clone();
-            copy.Add(val);
-            return copy.IsPerfectlyBalanced();
-        }
-
-        private Node CloneNode(Node node)
-        {
-            if (node == null) return null;
-            Node newNode = new Node(node.inf)
+            // 1. Проверка минимальной высоты: h = ceil(log2(n+1))
+            int n = Count;
+            double idealH = Math.Ceiling(Math.Log(n + 1, 2));
+            if (Height != (int)idealH) return false;
+            // 2. Рекурсивная проверка модулей разности
+            bool Check(Node p)
             {
-                left = CloneNode(node.left),
-                rigth = CloneNode(node.rigth)
-            };
-            newNode.NewHeight();
-            return newNode;
+                if (p == null) return true;
+                int leftCount = Node.GetCount(p.Left);
+                int rightCount = Node.GetCount(p.Right);
+                if (Math.Abs(leftCount - rightCount) > 1) return false;
+                return Check(p.Left) && Check(p.Right);
+            }
+            return Check(root);
         }
 
-        public AVLTree Clone()
-        {
-            AVLTree newTree = new AVLTree();
-            newTree.root = CloneNode(root);
-            return newTree;
-        }
-
+        // Находит все значения, которые можно вставить, чтобы дерево стало идеально сбалансированным
         public List<int> FindPossibleInsertValues()
         {
-            List<int> result = new List<int>();
-            List<int> inorderList = new List<int>();
-            InOrder(root, inorderList);
-
-            int total = inorderList.Count;
-            int targetSize = NextFullTreeSize(total + 1);
-            if (targetSize != total + 1)
+            var result = new List<int>();
+            // Определяем возможную высоту после вставки одного узла
+            int n = Count;
+            int targetH = (int)Math.Ceiling(Math.Log(n + 2, 2));
+            // Если после вставки n+1 элементов минимальная высота не targetH, то нет решений
+            if (Height != (int)Math.Ceiling(Math.Log(n + 1, 2)))
                 return result;
-
-            for (int i = 0; i <= inorderList.Count; i++)
+            // in-order обход
+            var inorder = new List<int>();
+            Node.InOrder(root, inorder);
+            for (int i = 0; i <= inorder.Count; i++)
             {
-                int minVal = (i == 0) ? inorderList[0] - 1 : inorderList[i - 1] + 1;
-                int maxVal = (i == inorderList.Count) ? inorderList[^1] + 1 : inorderList[i] - 1;
-
-                for (int candidate = minVal; candidate <= maxVal; candidate++)
+                int min = (i == 0) ? inorder[0] - 1 : inorder[i - 1] + 1;
+                int max = (i == inorder.Count) ? inorder[^1] + 1 : inorder[i] - 1;
+                for (int cand = min; cand <= max; cand++)
                 {
-                    if (CanInsertToBalance(candidate))
+                    var copy = new AVLTree(inorder);
+                    copy.Add(cand);
+                    if (copy.IsPerfectlyBalanced())
                     {
-                        result.Add(candidate);
+                        result.Add(cand);
                         break;
                     }
                 }
             }
             return result;
-        }
-
-        private int NextFullTreeSize(int n)
-        {
-            int h = 0;
-            while ((1 << h) - 1 < n) h++;
-            return (1 << h) - 1;
-        }
-
-        private void InOrder(Node node, List<int> list)
-        {
-            if (node == null) return;
-            InOrder(node.left, list);
-            list.Add(node.inf);
-            InOrder(node.rigth, list);
         }
     }
 }
