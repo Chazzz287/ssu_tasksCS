@@ -99,6 +99,36 @@ namespace Pr21_III_14
                 return Balance(p);
             }
 
+            // Удаление значения из поддерева с корнем p
+            public static Node Del(Node p, int val)
+            {
+                if (p == null)
+                    return null;
+                if (val < p.Value)
+                {
+                    p.Left = Del(p.Left, val);
+                }
+                else if (val > p.Value)
+                {
+                    p.Right = Del(p.Right, val);
+                }
+                else
+                {
+                    // Узел найден
+                    if (p.Left == null)
+                        return p.Right;
+                    if (p.Right == null)
+                        return p.Left;
+                    // Узел с двумя потомками: ищем минимальный в правом поддереве
+                    Node min = p.Right;
+                    while (min.Left != null)
+                        min = min.Left;
+                    p.Value = min.Value;
+                    p.Right = Del(p.Right, min.Value);
+                }
+                return Balance(p);
+            }
+
             // Симметричный (in-order) обход поддерева
             public static void InOrder(Node p, List<int> list)
             {
@@ -130,6 +160,9 @@ namespace Pr21_III_14
 
         // Вставка значения с балансировкой
         public void Add(int val) => root = Node.Insert(root, val);
+
+        // Удаление значения с балансировкой
+        public void Delete(int val) => root = Node.Del(root, val);
 
         // Высота дерева
         public int Height => Node.GetHeight(root);
