@@ -8,7 +8,10 @@ using Task.ThreeLayer.Entities;
 
 namespace Task.ThreeLayer.Entities
 {
-    [JsonSerializable(typeof(Person))]
+    [JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
+    [JsonDerivedType(typeof(Applicant), typeDiscriminator: "Applicant")]
+    [JsonDerivedType(typeof(Student), typeDiscriminator: "Student")]
+    [JsonDerivedType(typeof(Teacher), typeDiscriminator: "Teacher")]
     public abstract class Person : IComparable<Person>
     {
         public string LastName { get; set; }

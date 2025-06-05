@@ -5,18 +5,49 @@ using System.Text;
 using System.Threading.Tasks;
 using Task.ThreeLayer.Entities;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 
 namespace Task.ThreeLayer.DAL
 {
-    internal class BasePersons : IBasePersons
+    public class BasePersons : IBasePersons
     {
         int index;
         Dictionary<int, Person> persons;
 
+        private readonly JsonSerializerOptions options = new()
+        {
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver
+            {
+                Modifiers =
+        {
+            ti =>
+            {
+                if (ti.Type == typeof(Person))
+                {
+                    ti.PolymorphismOptions = new JsonPolymorphismOptions
+                    {
+                        TypeDiscriminatorPropertyName = "$type",
+                        UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization,
+                        DerivedTypes =
+                        {
+                            new JsonDerivedType(typeof(Applicant), "Applicant"),
+                            new JsonDerivedType(typeof(Student), "Student"),
+                            new JsonDerivedType(typeof(Teacher), "Teacher")
+                        }
+                    };
+                }
+            }
+        }
+            },
+            WriteIndented = true
+        };
+
+
         public BasePersons()
         {
-            using (FileStream file = new FileStream("data.json", FileMode.OpenOrCreate))
+            using (FileStream file = new FileStream("..\\..\\..\\..\\data.json", FileMode.OpenOrCreate))
             {
                 if (file.Length == 0) // файл пуст, создаю новую базу
                 {
@@ -25,7 +56,12 @@ namespace Task.ThreeLayer.DAL
                 }
                 else
                 {
-                    persons = JsonSerializer.Deserialize<Dictionary<int, Person>>(file);
+                    persons = JsonSerializer.Deserialize<Dictionary<int, Person>>(file, options);
+                    if (persons.Count > 0)
+                        index = persons.Keys.Max() + 1;
+                    else
+                        index = 0;
+
                 }
             }
         }
@@ -79,10 +115,12 @@ namespace Task.ThreeLayer.DAL
 
         public void SaveBasePersons()
         {
-            using (FileStream file = new FileStream("data.json", FileMode.OpenOrCreate))
+            using (FileStream file = new FileStream("..\\..\\..\\..\\data.json", FileMode.OpenOrCreate))
             {
-                JsonSerializer.Serialize(file, persons);
+                JsonSerializer.Serialize(file, persons, options);
             }
         }
     }
+
+
 }

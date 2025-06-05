@@ -1,0 +1,65 @@
+{
+  "0": {
+    "$type": "Applicant",
+    "LastName": "Иванов",
+    "BirthDate": "2005-06-15T00:00:00",
+    "Faculty": "Физика"
+  },
+  "1": {
+    "$type": "Student",
+    "LastName": "Петров",
+    "BirthDate": "2003-04-10T00:00:00",
+    "Faculty": "Математика",
+    "Course": 2
+  },
+  "2": {
+    "$type": "Teacher",
+    "LastName": "Сидоров",
+    "BirthDate": "1980-11-05T00:00:00",
+    "Faculty": "Информатика",
+    "Position": "Доцент",
+    "Experience": 15
+  },
+  "3": {
+    "$type": "Student",
+    "LastName": "Смирнов",
+    "BirthDate": "2001-09-25T00:00:00",
+    "Faculty": "Биология",
+    "Course": 4
+  },
+  "4": {
+    "$type": "Applicant",
+    "LastName": "Козлов",
+    "BirthDate": "2006-02-20T00:00:00",
+    "Faculty": "Химия"
+  },
+  "5": {
+    "$type": "Teacher",
+    "LastName": "Морозов",
+    "BirthDate": "1975-08-30T00:00:00",
+    "Faculty": "Филология",
+    "Position": "Профессор",
+    "Experience": 25
+  },
+  "6": {
+    "$type": "Student",
+    "LastName": "Фёдоров",
+    "BirthDate": "2002-07-18T00:00:00",
+    "Faculty": "Физика",
+    "Course": 3
+  },
+  "7": {
+    "$type": "Applicant",
+    "LastName": "Васильев",
+    "BirthDate": "2007-12-10T00:00:00",
+    "Faculty": "Информатика"
+  },
+  "8": {
+    "$type": "Teacher",
+    "LastName": "Андреев",
+    "BirthDate": "1985-03-22T00:00:00",
+    "Faculty": "Математика",
+    "Position": "Старший преподаватель",
+    "Experience": 10
+  }
+}

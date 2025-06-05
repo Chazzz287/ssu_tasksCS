@@ -15,12 +15,14 @@ using Task.ThreeLayer.Entities;
  */
 namespace Task.ThreeLayer.BLL
 {
-    internal interface IPersonLogic
+    public interface IPersonLogic
     {
-        void AddPerson(string name);
-        void DeletePerson(string name);
+        void Add(string lastName, DateTime birthDate, string faculty); // Applicant
+        void Add(string lastName, DateTime birthDate, string faculty, int course); // Student
+        void Add(string lastName, DateTime birthDate, string faculty, string position, int experience); // Teacher
+        void DeletePerson(string lastName);
         void DeletePerson(int index);
-        IEnumerable GetAllPersons();
+        IEnumerable<Person> GetAllPersons();
         Person GetPerson(int index);
     }
 }

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|solutionrelative:pr1819_5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA48A918-884C-4F5B-A840-6CAAB4077772}|Pr1819_5\\Pr1819_5.csproj|c:\\users\\mari\\source\\repos\\ssu_taskscs\\pr1819_5\\pr1819_5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Teacher.cs",
               "RelativeDocumentMoniker": "Pr1819_5\\Teacher.cs",
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Student.cs",
               "RelativeDocumentMoniker": "Pr1819_5\\Student.cs",
@@ -88,31 +88,30 @@
               "RelativeToolTip": "Pr1819_5\\Student.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:50:25.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T08:50:25.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Applicant.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
               "RelativeDocumentMoniker": "Pr1819_5\\Applicant.cs",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Applicant.cs",
               "RelativeToolTip": "Pr1819_5\\Applicant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T08:49:32.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
               "RelativeDocumentMoniker": "Pr1819_5\\Person.cs",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr1819_5\\Pr1819_5\\Person.cs",
               "RelativeToolTip": "Pr1819_5\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T08:47:48.62Z",
               "EditorCaption": ""
