@@ -119,6 +119,7 @@ namespace Pr22_III_6
         {
             var dist = FloydWarshall();
             bool found = false;
+            var teempdist = new double[N, N];
 
             // Перебираем все пары городов, между которыми нет дороги
             for (int i = 0; i < N; i++)
@@ -142,7 +143,7 @@ namespace Pr22_III_6
                                 for (int b = 0; b < N; b++)
                                     if (tempDist[a, k] + tempDist[k, b] < tempDist[a, b])
                                         tempDist[a, b] = tempDist[a, k] + tempDist[k, b];
-
+                        teempdist = tempDist;
                         // Проверяем, не превышает ли расстояние между любыми городами maxDistance
                         bool allWithinLimit = true;
                         for (int a = 0; a < N && allWithinLimit; a++)
@@ -166,6 +167,18 @@ namespace Pr22_III_6
             if (!found)
             {
                 Console.WriteLine("Нет такой пары городов, между которыми можно построить одну дорогу, чтобы условие выполнялось.");
+            }
+            Console.WriteLine("Матрица расстояний после добавления дороги:");
+            for (int i = 0; i < teempdist.GetLength(0); i++)
+            {
+                for (int j = 0; j < teempdist.GetLength(0); j++)
+                {
+                    if (double.IsPositiveInfinity(teempdist[i, j]))
+                        Console.Write("  INF ");
+                    else
+                        Console.Write($"{teempdist[i, j],7:F2} ");
+                }
+                Console.WriteLine();
             }
         }
 

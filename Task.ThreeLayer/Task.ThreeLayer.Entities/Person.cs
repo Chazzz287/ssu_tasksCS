@@ -19,6 +19,7 @@ namespace Task.ThreeLayer.Entities
 
         public Person() { }
 
+        [JsonConstructor]
         public Person(string lastName, DateTime birthDate)
         {
             LastName = lastName;

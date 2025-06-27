@@ -21,27 +21,28 @@ namespace Task.ThreeLayer.DAL
             TypeInfoResolver = new DefaultJsonTypeInfoResolver
             {
                 Modifiers =
-        {
-            ti =>
-            {
-                if (ti.Type == typeof(Person))
                 {
-                    ti.PolymorphismOptions = new JsonPolymorphismOptions
+                    ti =>
                     {
-                        TypeDiscriminatorPropertyName = "$type",
-                        UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization,
-                        DerivedTypes =
+                        if (ti.Type == typeof(Person))
                         {
-                            new JsonDerivedType(typeof(Applicant), "Applicant"),
-                            new JsonDerivedType(typeof(Student), "Student"),
-                            new JsonDerivedType(typeof(Teacher), "Teacher")
+                            ti.PolymorphismOptions = new JsonPolymorphismOptions
+                            {
+                                TypeDiscriminatorPropertyName = "$type",
+                                UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization,
+                                DerivedTypes =
+                                {
+                                    new JsonDerivedType(typeof(Applicant), "Applicant"),
+                                    new JsonDerivedType(typeof(Student), "Student"),
+                                    new JsonDerivedType(typeof(Teacher), "Teacher")
+                                }
+                            };
                         }
-                    };
+                    }
                 }
-            }
-        }
             },
-            WriteIndented = true
+            WriteIndented = true,
+            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
         };
 
 
@@ -74,6 +75,7 @@ namespace Task.ThreeLayer.DAL
         {
             persons.Add(index, person);
             index++;
+            SaveBasePersons();
         }
 
         public void DeletePerson(string name)
@@ -86,6 +88,7 @@ namespace Task.ThreeLayer.DAL
                     break;
                 }
             }
+            SaveBasePersons();
         }
 
         public void DeletePerson(int index)
@@ -94,6 +97,7 @@ namespace Task.ThreeLayer.DAL
             {
                 persons.Remove(index);
             }
+            SaveBasePersons();
         }
 
         public IEnumerable<Person> GetAllPersons()

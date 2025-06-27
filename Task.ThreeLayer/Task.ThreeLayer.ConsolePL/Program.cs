@@ -30,11 +30,11 @@ namespace Task.ThreeLayer.ConsolePL
 
             Console.WriteLine("\nПосле добавления новых записей:");
             Show(personLogic);
-            // Удаление по фамилии
-            personLogic.DeletePerson("Ivanov");
-            personLogic.DeletePerson(1); // Удаление по индексу
-            Console.WriteLine("\nПосле удаления записей:");
-            Show(personLogic);
+            //// Удаление по фамилии
+            //personLogic.DeletePerson("Ivanov");
+            //personLogic.DeletePerson(1); // Удаление по индексу
+            //Console.WriteLine("\nПосле удаления записей:");
+            //Show(personLogic);
         }
     }
 }
