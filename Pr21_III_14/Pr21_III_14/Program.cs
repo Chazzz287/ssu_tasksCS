@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Collections.Generic;
 
 /*
  * 8 4 12 2 6 10 14 1 3 5 7 9 11 13 => 15
@@ -16,38 +18,41 @@ namespace Pr21_III_14
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            const string path = "C:\\Users\\Mari\\source\\repos\\ssu_tasksCS\\Pr21_III_14\\Pr21_III_14\\input.txt";
+            // Путь к входному файлу: первый аргумент, иначе "input.txt" в каталоге запуска
+            string path = args.Length > 0 ? args[0] : "../../../input.txt";
             if (!File.Exists(path))
             {
-                Console.WriteLine("Файл input.txt не найден.");
+                Console.WriteLine($"Файл \"{path}\" не найден.");
                 return;
             }
 
+            // Читаем все целые числа из файла
             var values = Array.ConvertAll(
                 File.ReadAllText(path)
                     .Split(new[] { ' ', '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries),
                 int.Parse);
 
-            var tree = new AVLTree();
-            foreach (var v in values)
-                tree.Add(v);
+            // Строим дерево
+            var tree = new AVLTree(values);
 
             Console.WriteLine($"Высота дерева: {tree.Height}");
             Console.WriteLine($"Количество узлов: {tree.Count}");
-            Console.WriteLine($"Идеально сбалансировано? {tree.IsPerfectlyBalanced()}");
 
-            var possible = tree.FindPossibleInsertValues();
-            if (possible.Count == 0)
+            bool balanced = tree.IsPerfectlyBalanced();
+            Console.WriteLine($"Идеально сбалансировано? {balanced}");
+
+            var candidates = tree.FindPossibleInsertValues();
+            if (candidates.Count == 0)
             {
                 Console.WriteLine("Невозможно добиться идеального баланса добавлением одного узла.");
             }
             else
             {
-                Console.WriteLine("Допустимые значения для добавления:");
-                foreach (var x in possible)
-                    Console.WriteLine(x);
+                Console.WriteLine("Значения, которые сделают дерево идеальным (весовой баланс на корне):");
+                foreach (var v in candidates)
+                    Console.WriteLine(v);
             }
         }
     }
