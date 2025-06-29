@@ -57,12 +57,11 @@ namespace Task.ThreeLayer.DAL
                 }
                 else
                 {
-                    persons = JsonSerializer.Deserialize<Dictionary<int, Person>>(file, options);
+                    persons = JsonSerializer.Deserialize<Dictionary<int, Person>>(file, options) ?? new Dictionary<int, Person>();
                     if (persons.Count > 0)
                         index = persons.Keys.Max() + 1;
                     else
                         index = 0;
-
                 }
             }
         }
@@ -80,13 +79,15 @@ namespace Task.ThreeLayer.DAL
 
         public void DeletePerson(string name)
         {
-            foreach (var item in persons)
+            // Находим все ключи для удаления (если фамилия не уникальна)
+            var keysToRemove = persons
+                .Where(item => item.Value.LastName == name)
+                .Select(item => item.Key)
+                .ToList();
+
+            foreach (var key in keysToRemove)
             {
-                if (item.Value.LastName == name)
-                {
-                    persons.Remove(item.Key);
-                    break;
-                }
+                persons.Remove(key);
             }
             SaveBasePersons();
         }
@@ -119,7 +120,7 @@ namespace Task.ThreeLayer.DAL
 
         public void SaveBasePersons()
         {
-            using (FileStream file = new FileStream("..\\..\\..\\..\\data.json", FileMode.OpenOrCreate))
+            using (FileStream file = new FileStream("..\\..\\..\\..\\data.json", FileMode.Create))
             {
                 JsonSerializer.Serialize(file, persons, options);
             }

@@ -420,6 +420,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1226, 480);
+            Controls.Add(panelStudent);
             Controls.Add(textBoxForDel);
             Controls.Add(buttonDel);
             Controls.Add(buttonLoad);
@@ -427,11 +428,11 @@
             Controls.Add(buttonTeacher);
             Controls.Add(buttonStudent);
             Controls.Add(listBox1);
-            Controls.Add(panelStudent);
             Controls.Add(panelApplicant);
             Controls.Add(panelTeacher);
             Name = "Form1";
-            Text = "Form1";
+            Text = "My Programm";
+            Load += Form1_Load_1;
             panelStudent.ResumeLayout(false);
             panelStudent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Course).EndInit();

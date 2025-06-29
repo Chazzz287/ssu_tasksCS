@@ -341,41 +341,74 @@ namespace Pr22_II_13
         {
             graph.AddNode(connections);
         }
+
         // Определяет, существует ли путь длиной не более maxLength между двумя вершинами
-        public bool ExistsPath(int start, int end, int maxLength, out List<int> path)
+        public bool ExistsPath(int start, int end, int maxWeight, out List<int> path)
         {
-            path = new List<int>();
-            if (start < 0 || start >= Size || end < 0 || end >= Size || maxLength < 0)
+            path = new List<int>(); // Список для хранения найденного пути (если он будет найден)
+
+            // Проверка на корректность входных данных: номера вершин и максимальный вес не должны выходить за допустимые границы
+            if (start < 0 || start >= Size || end < 0 || end >= Size || maxWeight < 0)
                 return false;
 
-            var queue = new Queue<(int vertex, int length, List<int> currentPath)>();
-            var visited = new bool[Size, maxLength + 1];
-            queue.Enqueue((start, 0, new List<int> { start }));
-            visited[start, 0] = true;
+            // Создаём приоритетную очередь: в ней храним кортежи (текущая вершина, текущий вес пути, сам путь до этой вершины)
+            // Второй параметр — приоритет (чем меньше, тем раньше элемент попадёт в очередь) — используем вес пути
+            var pq = new PriorityQueue<(int vertex, int weight, List<int> path), int>();
 
-            while (queue.Count > 0)
+            // Помещаем стартовую вершину в очередь с весом 0 и путём, содержащим только её
+            pq.Enqueue((start, 0, new List<int> { start }), 0);
+
+            // Массив посещённых вершин — чтобы не зацикливаться и не обрабатывать одну вершину несколько раз
+            var visited = new bool[Size];
+
+            // Пока в очереди есть элементы
+            while (pq.Count > 0)
             {
-                var (current, length, currentPath) = queue.Dequeue();
-                if (current == end && length <= maxLength && length > 0)
+                // Извлекаем вершину с наименьшим весом пути
+                var (current, weight, currentPath) = pq.Dequeue();
+
+                // Если текущая вершина — целевая, и суммарный вес пути не превышает maxWeight, значит путь найден
+                if (current == end && weight <= maxWeight)
                 {
-                    path = currentPath;
-                    return true;
+                    path = currentPath; // Сохраняем путь
+                    return true;        // Возвращаем успех
                 }
 
-                if (length < maxLength)
+                // Если уже посещали эту вершину раньше (по более короткому пути), пропускаем её
+                if (visited[current]) continue;
+
+                // Отмечаем текущую вершину как посещённую
+                visited[current] = true;
+
+                // Проходим по всем соседям текущей вершины
+                for (int neighbor = 0; neighbor < Size; neighbor++)
                 {
-                    for (int neighbor = 0; neighbor < Size; neighbor++)
+                    // Получаем вес ребра между current и neighbor
+                    int edgeWeight = graph[current, neighbor];
+
+                    // Если ребро существует (вес > 0) и сосед ещё не посещён
+                    if (edgeWeight > 0 && !visited[neighbor])
                     {
-                        if (graph[current, neighbor] != 0 && !visited[neighbor, length + 1])
+                        // Вычисляем новый суммарный вес пути до соседа
+                        int newWeight = weight + edgeWeight;
+
+                        // Если новый вес не превышает допустимый лимит
+                        if (newWeight <= maxWeight)
                         {
-                            var nextPath = new List<int>(currentPath) { neighbor };
-                            queue.Enqueue((neighbor, length + 1, nextPath));
-                            visited[neighbor, length + 1] = true;
+                            // Создаём копию текущего пути и добавляем в неё соседа
+                            var newPath = new List<int>(currentPath) { neighbor };
+
+                            // Помещаем нового кандидата в очередь с соответствующим приоритетом
+                            pq.Enqueue((neighbor, newWeight, newPath), newWeight);
                         }
                     }
                 }
             }
+
+            // Если все возможные пути рассмотрены, а нужный путь не найден — возвращаем false
             return false;
         }
+
+
     }
 }

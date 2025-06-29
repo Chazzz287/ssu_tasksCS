@@ -1,10 +1,4 @@
 {
-  "0": {
-    "$type": "Applicant",
-    "Faculty": "Физика",
-    "LastName": "Иванов",
-    "BirthDate": "2005-06-15T00:00:00"
-  },
   "1": {
     "$type": "Student",
     "Faculty": "Математика",
@@ -48,12 +42,6 @@
     "LastName": "Фёдоров",
     "BirthDate": "2002-07-18T00:00:00"
   },
-  "7": {
-    "$type": "Applicant",
-    "Faculty": "Информатика",
-    "LastName": "Васильев",
-    "BirthDate": "2007-12-10T00:00:00"
-  },
   "8": {
     "$type": "Teacher",
     "Faculty": "Математика",
@@ -83,13 +71,6 @@
     "LastName": "Sidorov",
     "BirthDate": "1998-03-03T00:00:00"
   },
-  "12": {
-    "$type": "Student",
-    "Faculty": "КНиИТ",
-    "Course": 1,
-    "LastName": "Петя",
-    "BirthDate": "2025-06-28T01:23:34.2805526+04:00"
-  },
   "13": {
     "$type": "Teacher",
     "Faculty": "Книит",
@@ -97,18 +78,12 @@
     "Experience": 100,
     "LastName": "Иван",
     "BirthDate": "2025-06-21T01:24:04.888"
-  }
-}  "14": {
-    "$type": "Applicant",
-    "Faculty": "книти",
-    "LastName": "сонечка",
-    "BirthDate": "2025-06-30T01:24:59.01"
-  }
-}  "15": {
+  },
+  "14": {
     "$type": "Student",
-    "Faculty": "ы",
+    "Faculty": "ч",
     "Course": 1,
-    "LastName": "ыыыы",
-    "BirthDate": "2025-06-28T01:30:41.2024348+04:00"
+    "LastName": "ЧЧЧ",
+    "BirthDate": "2025-06-28T11:53:00.6295936+04:00"
   }
 }
